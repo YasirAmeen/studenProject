@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apps.dina.zeft.MenueActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:id="@+id/NameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="30dp">
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="55dp"
+                android:layout_height="19dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="Name "
+                android:textColor="@color/colorPrimary"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="188dp" />
+
+            <EditText
+                android:id="@+id/NameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="96dp"
+                tools:layout_editor_absoluteY="164dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/GenderLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="30dp">
+
+            <TextView
+                android:id="@+id/Gender"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="Gender"
+                android:textColor="@color/colorPrimary"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="260dp" />
+
+            <EditText
+                android:id="@+id/GenderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="96dp"
+                tools:layout_editor_absoluteY="234dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/AgeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="30dp">
+
+            <TextView
+                android:id="@+id/Age"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="Age"
+                android:textColor="@color/colorPrimary"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="325dp" />
+
+            <EditText
+                android:id="@+id/AgeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="96dp"
+                tools:layout_editor_absoluteY="299dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/WeightLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="30dp">
+
+            <TextView
+                android:id="@+id/Weight"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:text="Weight"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="392dp" />
+
+            <EditText
+                android:id="@+id/WieghtText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="96dp"
+                tools:layout_editor_absoluteY="366dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/HightLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="30dp">
+
+            <TextView
+                android:id="@+id/Hight"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="Height"
+                android:textColor="@color/colorPrimary"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="456dp" />
+
+            <EditText
+                android:id="@+id/HightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="96dp"
+                tools:layout_editor_absoluteY="430dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn"
+            android:text="Save"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

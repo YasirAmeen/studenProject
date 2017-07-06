@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tab1"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/UpperLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="111dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/LeftUpperLayout"
+                        android:layout_width="184dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/StrokeRate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:paddingLeft="3dp"
+                            android:text="Stroke Rate"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:typeface="monospace" />
+
+                        <TextView
+                            android:id="@+id/StrokeRateText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:ems="10"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/RightUpperLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/ElapsedTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:paddingLeft="3dp"
+                            android:text="Elapsed Time"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:typeface="monospace" />
+
+                        <TextView
+                            android:id="@+id/ElapsedTimeText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/colorPrimary"
+                            android:ems="10"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/MiddelLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="111dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/LeftMiddelLayout"
+                        android:layout_width="184dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Distance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:paddingLeft="3dp"
+                            android:text="Distance"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:typeface="monospace" />
+
+                        <TextView
+                            android:id="@+id/DistanceText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:ems="10"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/RightMiddelLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Last10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:paddingLeft="3dp"
+                            android:text="Speed"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:typeface="monospace" />
+
+                        <TextView
+                            android:id="@+id/SpeedText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:ems="10"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LowerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/LeftLowerLayout"
+                        android:layout_width="184dp"
+                        android:layout_height="111dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/StrokeCount"
+                            android:layout_width="189dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:paddingLeft="3dp"
+                            android:text="Stroke Count"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:typeface="monospace" />
+
+                        <TextView
+                            android:id="@+id/StrokeCountText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:ems="10"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp"
+                            android:textSize="30sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/RightLowerLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="111dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Clock"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:paddingLeft="3dp"
+                            android:text="Clock "
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:typeface="monospace" />
+
+                        <TextClock
+                            android:id="@+id/textClock"
+                            android:layout_width="202dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:ems="10"
+                            android:fontFamily="sans-serif-light"
+                            android:format12Hour="hh:mm:ss a"
+                            android:gravity="left|center"
+                            android:paddingLeft="12dp"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="31sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LowerLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/Left"
+                        android:layout_width="184dp"
+                        android:layout_height="111dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Tilting"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:paddingLeft="3dp"
+                            android:text="Tilting"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/TiltingText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.99"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Calories"
+                            android:layout_width="199dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:paddingLeft="3dp"
+                            android:text="Calories"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/CaloriesText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/graph"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/colorPrimary" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/Start"
+                android:layout_width="83dp"
+                android:layout_height="77dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="120dp"
+                android:background="@drawable/botton"
+                android:onClick="Calculating"
+                android:text="START" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

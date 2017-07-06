@@ -22,7 +22,7 @@ import io.realm.RealmResults;
 
 
 public class TabFragment2 extends Fragment {
-   private String t;
+   /*private String t;
     private String clock;
     private String N;
     private String Distance;
@@ -30,12 +30,12 @@ public class TabFragment2 extends Fragment {
 
 
     private Realm realm;
-    private AlertDialog dialog;
+    private AlertDialog dialog;*/
     PlayerAdapter adapter;
     private View v;
 
 
-    BroadcastReceiver BCReceiver1;
+    //BroadcastReceiver BCReceiver1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

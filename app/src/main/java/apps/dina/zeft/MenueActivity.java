@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.pixplicity.easyprefs.library.Prefs;
+
 public class MenueActivity extends AppCompatActivity {
 
     TextView _Name;
@@ -27,13 +29,14 @@ public class MenueActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 n = _Name.getText().toString();
+                Prefs.putString("playerName",n);
 
             }
         });
 
        //
-        broadcaster1 = LocalBroadcastManager.getInstance(this);
-        sendResult(n);
+      /*  broadcaster1 = LocalBroadcastManager.getInstance(this);
+        sendResult(n);*/
 
     }
 

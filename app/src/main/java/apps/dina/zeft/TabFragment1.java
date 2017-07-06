@@ -35,6 +35,7 @@ import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
+import com.pixplicity.easyprefs.library.Prefs;
 
 import org.eclipse.paho.android.service.MqttAndroidClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
@@ -130,6 +131,12 @@ public class TabFragment1 extends Fragment implements SensorEventListener {
                     startCounter();
                 }
                 else{
+
+                    if(Prefs.getString("playerName","").isEmpty()) {
+
+                        Toast.makeText(getActivity(), "Please set the player name first", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
                     flag=true;
                     btnShowLocation.setText("START");
                     stopCounter();
@@ -168,6 +175,8 @@ public class TabFragment1 extends Fragment implements SensorEventListener {
                     p.setElapsedTime(ConvertedTime);
                     p.setClock(Time);
                     realm.commitTransaction();
+
+                    Prefs.remove("playerName");
 
 
                    /* FragmentTransaction fragmenttransaction = getFragmentManager().beginTransaction();

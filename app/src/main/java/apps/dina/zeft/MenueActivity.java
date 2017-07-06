@@ -30,6 +30,7 @@ public class MenueActivity extends AppCompatActivity {
             public void onClick(View view) {
                 n = _Name.getText().toString();
                 Prefs.putString("playerName",n);
+                finish();
 
             }
         });

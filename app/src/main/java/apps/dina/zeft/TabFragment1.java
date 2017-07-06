@@ -121,6 +121,12 @@ public class TabFragment1 extends Fragment implements SensorEventListener {
 
             @Override
             public void onClick(View arg0) {
+
+                if(Prefs.getString("playerName","").isEmpty()) {
+
+                    Toast.makeText(getActivity(), "Please set the player name first", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 button_status = !button_status;
                 if(button_status){
                     flag=false;
@@ -132,11 +138,7 @@ public class TabFragment1 extends Fragment implements SensorEventListener {
                 }
                 else{
 
-                    if(Prefs.getString("playerName","").isEmpty()) {
 
-                        Toast.makeText(getActivity(), "Please set the player name first", Toast.LENGTH_SHORT).show();
-                        return;
-                    }
                     flag=true;
                     btnShowLocation.setText("START");
                     stopCounter();
@@ -170,7 +172,7 @@ public class TabFragment1 extends Fragment implements SensorEventListener {
                     int nextID = query.size(); //Retrieving a results size.
                     Player p=realm.createObject(Player.class);
                     p.setId(id);
-                    p.setName(N);
+                    p.setName(Prefs.getString("playerName",""));
                     p.setDistance(FinalD);
                     p.setElapsedTime(ConvertedTime);
                     p.setClock(Time);
